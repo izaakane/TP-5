@@ -87,21 +87,3 @@ class Graphe:
         self.chemin_optimal = []
         return float('inf'), []
 
-# ...existing code...
-
-if __name__ == "__main__":
-    # Exemple d'utilisation avec le nouveau graphe
-    g = Graphe()
-    g.ajouter_arete('A', 'B', 4)
-    g.ajouter_arete('A', 'C', 2)
-    g.ajouter_arete('B', 'C', 5)
-    g.ajouter_arete('B', 'D', 10)
-    g.ajouter_arete('C', 'E', 3)
-    g.ajouter_arete('E', 'D', 4)
-    g.ajouter_arete('D', 'F', 11)
-    g.afficher()
-    g.afficher_graphe()
-    distance, chemin = g.plus_court_chemin('A', 'F')
-    print(f"Plus court chemin de A à F : {chemin} (distance = {distance})")
-    print("bye")
-    g.afficher_chemin_optimal()
