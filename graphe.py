@@ -103,3 +103,7 @@ if __name__ == "__main__":
     g.afficher_graphe()
     distance, chemin = g.plus_court_chemin('A', 'F')
     print(f"Plus court chemin de A à F : {chemin} (distance = {distance})")
+    print("hello")
+    g.afficher_chemin_optimal()
+
+    
